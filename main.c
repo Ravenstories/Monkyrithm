@@ -11,31 +11,36 @@ int main()
     int size = 100;
 
     // Allokerer hukommelse til arrayet
+    /*
     int *arr = malloc(size * sizeof(int));
     if (arr == NULL) {
         printf("Hukommelse kunne ikke allokeres.\n");
         return 1;
     }
+    */
+
+    int noPointerArr[100];
 
     // Definerer de nedre og øvre grænser for tilfældige tal
     int lower = 1, upper = 1000;
 
     // Genererer tilfældige tal og gemmer dem i arrayet
-    generateRandomNumbers(arr, size, lower, upper);
+    //generateRandomNumbers(arr, size, lower, upper);
+    generateRandomNumbersWithoutPointer(noPointerArr, size, lower, upper);
 
     // Udskriver elementerne i arrayet
     printf("Tilfældige tal i arrayet: ");
     for (int i = 0; i < size; i++) {
-        printf("%d ", arr[i]);
+        printf("%d ", noPointerArr[i]);
     }
     printf("\n\n");
 
     // Sorterer arrayet
 
-    selectionSort(arr, size);
+    selectionSort(noPointerArr, size);
     printf("Sorterede tal i arrayet: ");
     for (int i = 0; i < size; i++) {
-        printf("%d ", arr[i]);
+        printf("%d ", noPointerArr[i]);
     }
     //*/
 
@@ -48,7 +53,7 @@ int main()
     //*/
 
     // Frigør hukommelsen
-    free(arr);
+    free(noPointerArr);
 
     return 0;
 }
@@ -58,8 +63,11 @@ void generateRandomNumbers(int *arr, int size, int lower, int upper) {
         arr[i] = (rand() % (upper - lower + 1)) + lower;
     }
 }
-
-
+void generateRandomNumbersWithoutPointer(int arr[], int size, int lower, int upper) {
+    for (int i = 0; i < size; ++i) {
+        arr[i] = (rand() % (upper - lower + 1)) + lower;
+    }
+}
 
 void swap(int *xp, int *yp)
 {
@@ -68,3 +76,31 @@ void swap(int *xp, int *yp)
     *yp = temp;
 }
 
+void selectionSort(int arr[], int size){
+    int i, j, min_idx;
+
+    for (i = 0; i < size-1; i++)
+    {
+        min_idx = i;
+        for (j = i+1; j < size; j++)
+            if (arr[j] < arr[min_idx])
+                min_idx = j;
+
+        swap(arr[min_idx], arr[i]);
+
+    }
+}
+
+void selectionSortPointers(int *arr, int size) {
+    int i, j, *min_idx;
+
+    for (i = 0; i < size-1; i++) {
+        min_idx = arr + i;
+        for (j = i+1; j < size; j++) {
+            if (*(arr + j) < *(min_idx)){
+                min_idx = arr + j;
+            }
+        }
+        swap(*(min_idx), *(arr+i));
+    }
+}
