@@ -21,4 +21,18 @@ void moveIntDownArray(int arr[], int insertIndex, int insertOrigin) {
 
 
 void insertionSortPointers(int *arr, int size) {
+    for (int i = 1; i < size; i++) {
+        for (int j = 0; j < i; j++) {
+            if (*(arr + i) < *(arr + j)) {
+                moveIntDownArrayPointers(arr, j, i);
+                break;
+            }
+        }
+    }
+}
+
+void moveIntDownArrayPointers(int *arr, int insertIndex, int insertOrigin) {
+    for (int i = insertOrigin; i > insertIndex; i--) {
+        swap(arr + i, arr + i - 1);
+    }
 }
