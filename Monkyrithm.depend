@@ -13,12 +13,24 @@
 	<stdlib.h>
 	<time.h>
 
-1695804234 source:c:\users\thom09r7\onedrive - efif\personal\programmering\c\monkyrithm\main.c
+1695813044 source:c:\users\thom09r7\onedrive - efif\personal\programmering\c\monkyrithm\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
 
 1695807226 source:c:\users\thom09r7\onedrive - efif\personal\programmering\c\monkyrithm\selectionsort.c
+	<stdio.h>
+	<stdlib.h>
+
+1695808929 source:c:\users\thom09r7\onedrive - efif\personal\programmering\c\monkyrithm\mergesort.c
+	<stdio.h>
+	<stdlib.h>
+
+1695808897 source:c:\users\thom09r7\onedrive - efif\personal\programmering\c\monkyrithm\radixsort.c
+	<stdio.h>
+	<stdlib.h>
+
+1695812981 source:c:\users\thom09r7\onedrive - efif\personal\programmering\c\monkyrithm\insertionsort.c
 	<stdio.h>
 	<stdlib.h>
 
