@@ -21,7 +21,7 @@ int main()
 
 
 void PointerFreeFunctions(int lower, int upper, const int size) {
-    int noPointerArr[100];
+    int noPointerArr[size];
 
     generateRandomNumbersWithoutPointer(noPointerArr, size, lower, upper);
 
