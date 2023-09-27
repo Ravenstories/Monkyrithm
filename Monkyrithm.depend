@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1695801812 source:h:\jacobs verdens inderste\program projects\school assignments\algorithm\monkyrithm\main.c
+1695813217 source:h:\jacobs verdens inderste\program projects\school assignments\algorithm\monkyrithm\main.c
 	<stdio.h>
 	<stdlib.h>
 	<time.h>
@@ -19,6 +19,22 @@
 	<time.h>
 
 1695807226 source:c:\users\thom09r7\onedrive - efif\personal\programmering\c\monkyrithm\selectionsort.c
+	<stdio.h>
+	<stdlib.h>
+
+1695808999 source:h:\jacobs verdens inderste\program projects\school assignments\algorithm\monkyrithm\insertionsort.c
+	<stdio.h>
+	<stdlib.h>
+
+1695813034 source:h:\jacobs verdens inderste\program projects\school assignments\algorithm\monkyrithm\mergesort.c
+	<stdio.h>
+	<stdlib.h>
+
+1695808999 source:h:\jacobs verdens inderste\program projects\school assignments\algorithm\monkyrithm\radixsort.c
+	<stdio.h>
+	<stdlib.h>
+
+1695807767 source:h:\jacobs verdens inderste\program projects\school assignments\algorithm\monkyrithm\selectionsort.c
 	<stdio.h>
 	<stdlib.h>
 
