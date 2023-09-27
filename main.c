@@ -25,17 +25,27 @@ int main()
 
     // Udskriver elementerne i arrayet
     printf("Tilfældige tal i arrayet: ");
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
     printf("\n\n");
 
     // Sorterer arrayet
+
     selectionSort(arr, size);
     printf("Sorterede tal i arrayet: ");
-    for (int i = 0; i < size; ++i) {
+    for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
+    //*/
+
+    /*
+    selectionSortPointers(*arr, size);
+    printf("Pointer-Selection-Sorted tal i arrayet:\n");
+    for (int i = 0; i < size; i++) {
+        printf("%d ", arr[i]);
+    }
+    //*/
 
     // Frigør hukommelsen
     free(arr);
