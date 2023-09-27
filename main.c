@@ -8,16 +8,17 @@ int main()
     srand(time(0));
 
     // Antallet af elementer i arrayet
-    const int size = 100;
+    int size = 100;
 
     // Definerer de nedre og øvre grænser for tilfældige tal
     int lower = 1, upper = 1000;
 
-    //PointerFreeFunctions(lower, upper, size);
+    PointerFreeFunctions(lower, upper, size);
     PointerFunctions(lower, upper, size);
 
     return 0;
 }
+
 
 void PointerFreeFunctions(int lower, int upper, const int size) {
     int noPointerArr[100];
@@ -25,7 +26,7 @@ void PointerFreeFunctions(int lower, int upper, const int size) {
     generateRandomNumbersWithoutPointer(noPointerArr, size, lower, upper);
 
     // Udskriver elementerne i arrayet
-    printf("Tilfældige tal i arrayet: ");
+    printf("Pre Sorting: \n");
     for (int i = 0; i < size; i++) {
         printf("%d ", noPointerArr[i]);
     }
@@ -34,18 +35,15 @@ void PointerFreeFunctions(int lower, int upper, const int size) {
     // Sorterer arrayet
 
     selectionSort(noPointerArr, size);
-    printf("Sorterede tal i arrayet: ");
+    printf("SelectionSort Without Pointers: \n");
     for (int i = 0; i < size; i++) {
         printf("%d ", noPointerArr[i]);
     }
     //*/
-
-
-    // Frigør hukommelsen
-    free(noPointerArr);
 }
 
 void PointerFunctions(int lower, int upper, const int size) {
+
     // Allokerer hukommelse til arrayet
     int *arr = malloc(size * sizeof(int));
     if (arr == NULL) {
@@ -56,14 +54,14 @@ void PointerFunctions(int lower, int upper, const int size) {
     // Genererer tilfældige tal og gemmer dem i arrayet
     generateRandomNumbers(arr, size, lower, upper);
 
-    printf("Tilfældige tal i arrayet: ");
+    printf("Pre-Sorting: \n");
     for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
     printf("\n\n");
 
     selectionSortPointers(arr, size);
-    printf("Pointer-Selection-Sorted tal i arrayet:\n");
+    printf("Pointer-Selection-Sorted:\n");
     for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
     }
