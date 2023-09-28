@@ -9,12 +9,12 @@ void mergeSort(int arr[], int l, int r) {
         int m = l + (r - l) / 2;
 
         // Recursively sort the first and second halves 
-        //printf("Splitting: l=%d, m=%d, r=%d\n", l, m, r);
+        printf("Splitting: l=%d, m=%d, r=%d\n", l, m, r);
         mergeSort(arr, l, m);
         mergeSort(arr, m + 1, r);
 
         // Merge the sorted halves 
-        //printf("Merging: l=%d, m=%d, r=%d\n", l, m, r);
+        printf("Merging: l=%d, m=%d, r=%d\n", l, m, r);
         merge(arr, l, m, r);
     }
 }

@@ -34,3 +34,26 @@
 	<stdio.h>
 	<stdlib.h>
 
+1695882089 source:c:\users\jacob\source\repos\monkyrithm\insertionsort.c
+	<stdio.h>
+	<stdlib.h>
+
+1695885275 source:c:\users\jacob\source\repos\monkyrithm\main.c
+	<stdio.h>
+	<stdlib.h>
+	<time.h>
+
+1695882089 source:c:\users\jacob\source\repos\monkyrithm\radixsort.c
+	<stdio.h>
+	<stdlib.h>
+
+1695882089 source:c:\users\jacob\source\repos\monkyrithm\selectionsort.c
+	<stdio.h>
+	<stdlib.h>
+
+1695885740 source:c:\users\jacob\source\repos\monkyrithm\bogosort.c
+
+1695882571 source:c:\users\jacob\source\repos\monkyrithm\mergesort.c
+	<stdio.h>
+	<stdlib.h>
+

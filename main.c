@@ -8,15 +8,15 @@ int main()
     srand(time(0));
 
     // Antallet af elementer i arrayet
-    int size = 400;
+    int size = 8;
 
     // Definerer de nedre og øvre grænser for tilfældige tal
-    int lower = 1, upper = 1000;
-    
+    int lower = 1, upper = 100;
+
     printf("\nWithout Pointers\n");
     PointerFreeFunctions(lower, upper, size);
-    printf("\n\nWith Pointers\n");
-    PointerFunctions(lower, upper, size);
+    //printf("\n\nWith Pointers\n\n");
+    //PointerFunctions(lower, upper, size);
 
     return 0;
 }
@@ -36,8 +36,9 @@ void PointerFreeFunctions(int lower, int upper, const int size) {
 
    //Sorting algorithms:
         //selectionSort(noPointerArr, size);
-    mergeSort(noPointerArr, 0, size - 1);
-    
+        //mergeSort(noPointerArr, 0, size - 1);
+    bogoSort(noPointerArr, size);
+
     printf("Sorted Without Pointers: \n");
     for (int i = 0; i < size; i++) {
         printf("%d ", noPointerArr[i]);
@@ -67,6 +68,7 @@ void PointerFunctions(int lower, int upper, const int size) {
         //selectionSortPointers(arr, size);
     mergeSortPointers(arr, arr, arr + size - 1);
     //arr, arr, arr + arr_size - 1
+
     printf("Sorted With Pointers:\n");
     for (int i = 0; i < size; i++) {
         printf("%d ", arr[i]);
