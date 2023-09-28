@@ -31,7 +31,19 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
+		<Unit filename="insertionsort.c">
+			<Option compilerVar="CC" />
+		</Unit>
 		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="mergesort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="radixsort.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="selectionsort.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Extensions />
