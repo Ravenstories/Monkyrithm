@@ -66,6 +66,8 @@ void radixSort (int array[], int arraySize)
             // Put into array here??
         }
 
+        // HER PRØVER JEG AT SMIDE DET TILBAGE I ARRAY, DET VIRKER IKKE
+
         printf("AFTER SORTING AFTER SORTING AFTER SORTING\n");
         int placement;
         for(int j = 0; j < 10; j++)
